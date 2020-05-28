@@ -1,0 +1,103 @@
+
+.Rassa{
+	/* adding a new one */
+	width: 100%;
+	justify-content: left;
+
+	color: rgb(67, 85, 85);
+}
+
+body{
+    background:linear-gradient;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(202,216,225);
+}
+
+.icons{
+	margin-top: 2vw;
+}
+
+img:hover{
+	background-color: rgb(56, 210, 164); 
+}
+
+img{
+    width: 3.2vw;
+    height: 3.2vw;
+    background-color: #3a7bd5;
+    border: none;
+    margin: 0 0.3vw 0 0;
+}
+
+.github{
+	background-color: #5c6bc0;
+	border-radius: 50%;
+}
+
+.facebook{
+	background-color: #4064ae;
+	border-radius: 50%;
+}
+
+.linkedin{
+	background-color:#0074b1; 
+	border-radius: 50%;
+}
+
+.slider-holder{
+	position: relative;
+	width: 60%;
+	overflow: hidden;
+}
+
+.images-holder{
+	display: flex;
+	width: 100%;
+}
+
+.images-holder img{
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	transition: all 0.15s ease;
+	border-radius: 15%;
+}
+
+.images-holder input{
+	display: none;
+}
+
+.dots{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+.dots label{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: solid #fff 3px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	margin: 5px;
+	color: black;
+}
+.dots label:hover{background: #fff;}
+#img1:checked ~ .m1{
+	margin-left: 0;
+}
+#img2:checked ~ .m2{
+	margin-left: -100%;
+}
+#img3:checked ~ .m3{
+	margin-left: -200%;
+}
+/* adding other style for m4*/ 
+#img4:checked ~ .m4{
+	margin-left: -300%;
+}
+
